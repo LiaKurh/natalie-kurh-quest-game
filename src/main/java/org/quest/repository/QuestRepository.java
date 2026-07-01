@@ -20,7 +20,7 @@ public class QuestRepository {
     private final Map<String, QuestStep> questSteps;
 
     public QuestRepository() {
-        this(DEFAULT_FILE);
+         this(DEFAULT_FILE);
     }
 
     public QuestRepository(String fileName) {

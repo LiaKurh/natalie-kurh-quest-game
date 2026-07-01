@@ -26,7 +26,7 @@ public class QuestServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) {
         try {
             HttpSession session = req.getSession();
             Boolean isStarted = (Boolean) session.getAttribute(IS_STARTED);
@@ -43,7 +43,7 @@ public class QuestServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) {
         try {
             req.setCharacterEncoding("UTF-8");
             HttpSession session = req.getSession();
